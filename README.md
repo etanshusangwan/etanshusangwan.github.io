@@ -54,3 +54,4 @@ Put your own photo at `assets/profile.jpg`. Use a photo you are comfortable maki
 This is a public static website. Anyone can view its published content and inspect the client-side files. Visitors cannot edit the GitHub repository just by visiting the website, but anyone with write access to the repository can change the source. Protect your GitHub account with two-factor authentication and never commit secrets. Do not put private financial records or passwords on this site.
 
 There is no admin login in this first version. You edit the public source files in your GitHub repository. A future in-site admin editor would need a secure backend and authentication; a password hidden in HTML or JavaScript would not be secure.
+https://etanshusangwan.github.io/

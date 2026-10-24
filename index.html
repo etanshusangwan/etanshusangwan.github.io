@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Etanshu Sangwan's personal developer portfolio featuring projects, skills, and learning journey.">
+  <title>Etanshu Sangwan | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Etanshu home">
+        <span class="brand-mark">ES</span>
+        <span><strong>Etanshu</strong><small>Developer Portfolio</small></span>
+      </a>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home"><span>⌂</span> Overview</a>
+        <a class="nav-link" href="#projects"><span>▦</span> Projects</a>
+        <a class="nav-link" href="#about"><span>◉</span> About me</a>
+        <a class="nav-link" href="#skills"><span>⌘</span> Skills & tools</a>
+        <a class="nav-link" href="#journey"><span>↗</span> Learning journey</a>
+        <a class="nav-link" href="#contact"><span>✉</span> Contact</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <div><strong>Open to learning</strong><small>Building one project at a time</small></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <div class="breadcrumb">Portfolio <span>/</span> <strong id="currentSection">Overview</strong></div>
+        <div class="top-actions">
+          <a class="icon-link" href="https://github.com/etanshusangwan" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+          <a class="icon-link linkedin-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn homepage" title="Update this link to your profile">in</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle visual theme" title="Toggle visual theme">◐</button>
+        </div>
+      </header>
+
+      <section class="hero section-anchor" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> PERSONAL PORTFOLIO</div>
+          <p class="hello">Hello, I'm</p>
+          <h1>Etanshu <span>Sangwan.</span></h1>
+          <p class="hero-role">Aspiring Software Developer <i>·</i> Data Analyst in the making</p>
+          <p class="hero-description">I’m learning by building practical projects with Python and web technologies. This portfolio is where I share what I create, what I’m learning, and how I’m progressing.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#projects">Explore my projects <span>↗</span></a>
+            <a class="button button-secondary" href="#contact">Contact me</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/etanshusangwan" target="_blank" rel="noopener noreferrer">↗ GitHub profile</a>
+            <span></span>
+            <a href="mailto:etanshusangwan011@gmail.com">✉ Email</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="profile-frame">
+            <div class="profile-placeholder" id="profilePlaceholder">
+              <span class="profile-initials">ES</span>
+              <span class="photo-hint">Add your photo<br><small>assets/profile.jpg</small></span>
+            </div>
+            <img id="profilePhoto" class="profile-photo" src="assets/profile.jpg" alt="Portrait of Etanshu Sangwan" hidden>
+            <div class="profile-caption"><span class="caption-dot"></span><div><strong>Learning. Building. Improving.</strong><small>One step at a time.</small></div></div>
+          </div>
+          <div class="floating-chip chip-top"><span class="chip-icon">{"</>"}</span><span><strong>Build</strong><small>Real projects</small></span></div>
+          <div class="floating-chip chip-bottom"><span class="chip-icon blue-icon">↗</span><span><strong>Keep growing</strong><small>Every day counts</small></span></div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Portfolio highlights">
+        <article class="stat-card"><div class="stat-icon purple">▦</div><div><span class="stat-label">Featured projects</span><strong id="projectCount">2</strong><small>Built & in progress</small></div></article>
+        <article class="stat-card"><div class="stat-icon cyan">⌘</div><div><span class="stat-label">Current focus</span><strong>Python</strong><small>Logic and applications</small></div></article>
+        <article class="stat-card"><div class="stat-icon orange">↗</div><div><span class="stat-label">Approach</span><strong>Learn by doing</strong><small>Practice over promises</small></div></article>
+      </section>
+
+      <section class="content-section section-anchor" id="projects">
+        <div class="section-heading">
+          <div><p class="section-kicker">WHAT I'M BUILDING</p><h2>Featured projects<span>.</span></h2><p class="section-subtitle">Explore working apps and projects currently in progress.</p></div>
+          <span class="section-count" id="projectCountLabel">02 PROJECTS</span>
+        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section section-anchor" id="about">
+        <div class="section-heading"><div><p class="section-kicker">A LITTLE ABOUT ME</p><h2>Curious by nature<span>.</span></h2></div></div>
+        <div class="about-grid">
+          <article class="panel about-panel">
+            <div class="panel-icon">◉</div>
+            <h3>My story</h3>
+            <p>I’m a Computer Engineering diploma student in Haryana, India, working toward a career in software development and data analytics. I prefer understanding the logic behind a program and then applying it to a practical problem.</p>
+            <p>This site will grow alongside my skills. I’ll add projects as they become functional and share the technologies and lessons behind them.</p>
+          </article>
+          <article class="panel principles-panel">
+            <p class="section-kicker">MY WORKING PRINCIPLES</p>
+            <div class="principle"><span>01</span><div><strong>Build useful things</strong><small>Projects should solve a real problem, not just look good.</small></div></div>
+            <div class="principle"><span>02</span><div><strong>Understand the basics</strong><small>Learn the logic before adding complexity.</small></div></div>
+            <div class="principle"><span>03</span><div><strong>Improve consistently</strong><small>Small, steady improvements compound over time.</small></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="skills">
+        <div class="section-heading"><div><p class="section-kicker">TOOLS & TECHNOLOGIES</p><h2>Skills I'm developing<span>.</span></h2><p class="section-subtitle">A transparent snapshot of my current learning path.</p></div></div>
+        <div class="skills-layout">
+          <article class="panel skills-panel"><h3>Technical toolkit</h3><div class="skill-list" id="skillList"></div></article>
+          <article class="panel focus-panel"><h3>Current focus</h3><div class="focus-item"><span class="focus-symbol">Py</span><div><strong>Python programming</strong><small>Conditions, loops, functions and practical projects</small></div></div><div class="focus-item"><span class="focus-symbol html-symbol">〈〉</span><div><strong>Web development</strong><small>HTML, CSS, JavaScript and responsive layouts</small></div></div><div class="focus-item"><span class="focus-symbol data-symbol">▥</span><div><strong>Data & productivity</strong><small>Working toward stronger spreadsheet and data-analysis skills</small></div></div></article>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="journey">
+        <div class="section-heading"><div><p class="section-kicker">PROGRESS, NOT PERFECTION</p><h2>My learning journey<span>.</span></h2></div></div>
+        <div class="journey-list">
+          <div class="journey-item"><span class="journey-marker done">✓</span><div><div class="journey-title"><strong>Started building Python projects</strong><span class="journey-tag">PRACTICE</span></div><p>Practised programming fundamentals by turning small ideas into usable programs.</p></div></div>
+          <div class="journey-item"><span class="journey-marker done">✓</span><div><div class="journey-title"><strong>Published an EMI calculator dashboard</strong><span class="journey-tag">LIVE APP</span></div><p>Built an interactive Streamlit application with EMI calculations and a repayment schedule.</p><a class="text-link" href="https://emi-dashboard-calcultor-ku8pvzassz9x2ddixapnyx.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live dashboard ↗</a></div></div>
+          <div class="journey-item"><span class="journey-marker current">↗</span><div><div class="journey-title"><strong>Developing an expense & budget manager</strong><span class="journey-tag in-progress">IN PROGRESS</span></div><p>Working toward transaction entry, reliable calculations and data persistence. A public demo link will be added only when it is ready.</p></div></div>
+        </div>
+      </section>
+
+      <section class="contact-section section-anchor" id="contact">
+        <div class="contact-copy"><p class="section-kicker">LET'S CONNECT</p><h2>Have a project in mind?<br><span>Let's talk.</span></h2><p>I'm learning, building and open to constructive feedback. Reach out by email or explore my code on GitHub.</p></div>
+        <div class="contact-actions"><a class="button button-light" href="mailto:etanshusangwan011@gmail.com">✉ Email me <span>↗</span></a><a class="button button-outline-light" href="https://github.com/etanshusangwan" target="_blank" rel="noopener noreferrer">View GitHub ↗</a><button class="copy-email" id="copyEmail" type="button">Copy email address</button><p id="copyStatus" class="copy-status" aria-live="polite"></p></div>
+      </section>
+
+      <footer class="footer"><a class="footer-brand" href="#home">ES<span>.</span></a><p>Designed and built as a work in progress by Etanshu Sangwan.</p><a href="#home">Back to top ↑</a><small>© <span id="year"></span> Etanshu Sangwan</small></footer>
+    </main>
+  </div>
+</body>
+</html>

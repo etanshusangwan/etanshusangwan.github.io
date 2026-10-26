@@ -6,3 +6,35 @@
 @media(max-width:800px){.sidebar{transform:translateX(-100%);transition:transform .25s ease;box-shadow:20px 0 40px #0003}.sidebar.open{transform:translateX(0)}.main-content{margin-left:0;padding:0 22px}.menu-toggle{display:block}.topbar{height:65px}.breadcrumb{margin-right:auto}.hero{grid-template-columns:1fr .72fr;gap:12px;padding-top:42px}.hero h1{font-size:38px}.profile-frame{height:235px}.hero-visual{min-height:260px}.floating-chip{padding:8px}.chip-top{right:-10px;top:25px}.chip-bottom{left:-10px;bottom:22px}.stats-grid{margin-bottom:40px}.contact-section{align-items:flex-start;flex-direction:column}.contact-actions{max-width:none}}
 @media(max-width:600px){.main-content{padding:0 16px}.topbar{gap:10px}.breadcrumb{font-size:10px}.top-actions{gap:5px}.icon-link,.theme-toggle{min-width:30px;height:30px}.hero{grid-template-columns:1fr;padding:33px 0 25px}.hero h1{font-size:40px}.hero-visual{min-height:255px;margin-top:5px}.profile-frame{height:235px;width:205px}.chip-top{right:calc(50% - 140px);top:18px}.chip-bottom{left:calc(50% - 145px);bottom:15px}.hero-description{font-size:12px}.stats-grid{grid-template-columns:1fr;gap:8px}.stat-card{padding:12px 14px}.stat-card strong{font-size:16px}.stat-card small{font-size:10px}.section-heading{align-items:flex-start;flex-direction:column}.section-count{display:none}.project-grid,.about-grid,.skills-layout{grid-template-columns:1fr}.project-preview{height:145px}.project-content p{min-height:0}.content-section{padding-bottom:38px}.panel{padding:18px}.contact-section{padding:23px 19px}.contact-copy h2{font-size:25px}.footer{gap:10px}.footer p{flex-basis:calc(100% - 50px);order:2}.footer>a:not(.footer-brand){margin-left:auto}.footer small{order:3}.linkedin-link{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+
+/* Custom ES brand mark */
+.brand-mark img { display:block; width:100%; height:100%; object-fit:contain; border-radius:inherit; }
+
+
+/* Profile photo visibility fix */
+.profile-frame {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.profile-placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
